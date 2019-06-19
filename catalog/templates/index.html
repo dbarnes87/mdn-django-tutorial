@@ -15,4 +15,7 @@
     <li><strong>Number of Fantasy Books:</strong> {{ books_containing_genre }}</li>
     <li><strong>Number of Harry Potter Books:</strong> {{ num_potter_books }}</li>
   </ul>
+
+  <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
+
 {% endblock %}
